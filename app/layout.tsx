@@ -19,7 +19,7 @@ export default function RootLayout({ children, }: { children: React.ReactNode })
   const { toggleColorMode } = useColorMode();
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body >
         <CustomProviders>
           {children}
         </CustomProviders>
