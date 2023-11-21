@@ -1,9 +1,9 @@
 pipeline {
   agent any
   stages {
-    stage('') {
+    stage('Docker Build') {
       steps {
-        echo 'asd'
+        sh 'docker compose -f "docker-compose.yaml" up -d --build '
       }
     }
 
